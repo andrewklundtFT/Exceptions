@@ -18,14 +18,19 @@ public class App {
                 displayFactors(inputAsInt);
             } catch (Exception e)
             {
-                System.out.println("put just the number like a digit like the key on your keyboard like 6 not like six or like 6! or anything else just the number that's all i want");
+                System.out.println("only put the digit");
             }
             System.out.println("");
         }
-
     }
 
     public static void displayFactors (int x) {
-        System.out.println("farty");
+        System.out.println("factors: \n");
+        System.out.print(1);
+        for (int i = 2; i <= x; i++) {
+            if (x % i == 0) {
+                System.out.print(", " + i);
+            }
+        }
     }
 }
